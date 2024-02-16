@@ -549,8 +549,8 @@ h1 {
   padding: 0px;
 }
 .contenido__ingles .grilla__contenido__ingles div {
-  padding-top: 20px;
-  margin: auto;
+  padding: 20px 5px 5px 5px;
+  margin: 0px;
 }
 .contenido__ingles .grilla__contenido__ingles div article {
   padding: 10px;
