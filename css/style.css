@@ -543,6 +543,7 @@ h1 {
   display: flex;
   width: 100vw;
   flex-direction: column;
+  height: fit-content;
   gap: 5%;
   padding-left: 10px;
   position: relative;
@@ -708,9 +709,8 @@ h1 {
   .grilla__contenido__ingles .row {
     display: grid;
     grid-template-columns: repeat(30% 30% 30%, 1fr);
-    grid-template-rows: auto;
     justify-items: center;
-    grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9" "a10 a11 a12" "a13 a14 a15" "a16 a17 a18";
+    grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9" "a10 a11 a12";
   }
   .grilla__contenido__ingles article {
     width: 100%;
