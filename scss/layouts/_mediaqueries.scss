@@ -36,7 +36,6 @@
                     flex-direction: column;
                     align-items: center;
                     text-align: center;
-                    // color: $fifth-color;
                     font-size: medium;
                 }
 
@@ -127,7 +126,6 @@
         .row {
             display: grid;
             grid-template-columns: repeat(30% 30% 30%, 1fr);
-            // grid-template-rows: 30%;
             justify-items: center;
             grid-template-areas:
                 'a1 a2 a3'
@@ -137,9 +135,10 @@
                 // 'a13 a14 a15'
                 // 'a16 a17 a18';
         }
-        article{
+
+        article {
             width: 100%;
-        };
+        }
     }
 }
 
@@ -154,7 +153,6 @@
                 font-size: smaller;
                 transition: 2s;
             }
-
         }
     }
 
@@ -162,10 +160,6 @@
         .row {
             display: flex;
             flex-direction: column;
-            // padding: 10px;
-            // width: 50vw;
-            // flex-wrap: wrap;
-
         }
     }
 }
