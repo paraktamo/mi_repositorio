@@ -76,10 +76,6 @@
                 background-color: $terciary-color;
             }
 
-            .box-card {
-                visibility: hidden;
-                width: 0px;
-            }
         }
     }
 }
@@ -135,18 +131,34 @@
                 // 'a13 a14 a15'
                 // 'a16 a17 a18';
         }
+    }
+}
 
-        article {
-            width: 100%;
+@media (max-width: 720px) {
+    .grilla__contenido__ingles {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(50% 50%, 1fr);
+            justify-items: center;
+            grid-template-areas:
+                'a1 a2'
+                'a3 a4'
+                'a5 a6'
+                'a7 a8'
+                'a9 a10'
+                'a11 a12'
+
         }
     }
 }
 
 @media (max-width: 480px) {
+
     .dropdown__list {
         a {
             padding: 5px;
             font-size: 10px;
+            align-self: center;
 
             &:focus {
                 padding: 5px;
@@ -154,6 +166,7 @@
                 transition: 2s;
             }
         }
+
     }
 
     .grilla__contenido__ingles {

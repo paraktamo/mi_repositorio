@@ -20,6 +20,7 @@ body {
   border-radius: 0px 20px 0px 20px;
   color: #fffbf3;
   text-shadow: 5px 5px 10px #000000;
+  text-align: center;
 }
 
 @keyframes efectoNav {
@@ -430,6 +431,7 @@ h1 {
 }
 .contenido__historia .grid__historia .card__contenedor__historia {
   border-radius: 20px 20px 0px 0px;
+  width: 300px;
 }
 .contenido__historia .grid__historia .card__contenedor__historia .card__btn__historia {
   display: flex;
@@ -512,10 +514,8 @@ h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .contenido__ingles .body__contenedor__ingles .body__dropdown__ingles .btn-secondary:hover {
-  width: 100%;
   color: #fffbf3;
   background-color: #8153ef;
-  font-size: large;
   transition: 0.5s;
 }
 .contenido__ingles .body__contenedor__ingles .body__dropdown__ingles ul {
@@ -531,7 +531,6 @@ h1 {
 }
 .contenido__ingles .body__contenedor__ingles .body__dropdown__ingles ul li a:hover {
   padding: 15px;
-  font-size: larger;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   align-items: center;
   text-align: center;
@@ -541,13 +540,11 @@ h1 {
 }
 .contenido__ingles .grilla__contenido__ingles {
   display: flex;
-  width: 100vw;
   flex-direction: column;
-  height: fit-content;
+  flex-wrap: wrap;
   gap: 5%;
-  padding-left: 10px;
-  position: relative;
-  padding: 0px;
+  justify-content: center;
+  margin: 0 auto;
 }
 .contenido__ingles .grilla__contenido__ingles div {
   padding: 20px 5px 5px 5px;
@@ -557,6 +554,9 @@ h1 {
   padding: 10px;
   text-align: center;
   align-items: center;
+  min-width: 200px;
+  max-width: 100px;
+  align-self: center;
 }
 .contenido__ingles .grilla__contenido__ingles div article img {
   object-fit: cover;
@@ -566,6 +566,7 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.262745098) 5px 5px;
   padding: auto;
   cursor: pointer;
+  height: 200px;
 }
 .contenido__ingles .grilla__contenido__ingles div article img:hover {
   align-self: center;
@@ -688,10 +689,6 @@ h1 {
   .contenido__historia .grid__historia .contenedor {
     background-color: #fffbf3;
   }
-  .contenido__historia .grid__historia .box-card {
-    visibility: hidden;
-    width: 0px;
-  }
 }
 @media (max-width: 1024px) {
   .contenido__contacto {
@@ -712,14 +709,20 @@ h1 {
     justify-items: center;
     grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9" "a10 a11 a12";
   }
-  .grilla__contenido__ingles article {
-    width: 100%;
+}
+@media (max-width: 720px) {
+  .grilla__contenido__ingles .row {
+    display: grid;
+    grid-template-columns: repeat(50% 50%, 1fr);
+    justify-items: center;
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6" "a7 a8" "a9 a10" "a11 a12";
   }
 }
 @media (max-width: 480px) {
   .dropdown__list a {
     padding: 5px;
     font-size: 10px;
+    align-self: center;
   }
   .dropdown__list a:focus {
     padding: 5px;
